@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar_contacts"
+    android:layout_height="40dp"
+    android:layout_width="match_parent"
+    android:minHeight="?attr/actionBarSize"
+    android:background="#619bd5"
+    app:theme="@style/AppTheme"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="ALPHABET :   "
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="30sp"
+            android:id="@+id/toolbar_textview"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar_alphabet"
+            android:layout_toRightOf="@id/toolbar_textview"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

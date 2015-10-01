@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <EditText
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/searchView"
+        android:drawableLeft="@android:drawable/ic_menu_search"
+        android:layout_width="match_parent"
+        android:singleLine="true"
+        android:layout_gravity="right"
+        android:layout_height="wrap_content"
+        android:hint="Search"
+        android:paddingLeft="5dp"
+        android:layout_toLeftOf="@+id/searchView_close"
+        ></EditText>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/searchView_close"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/ic_menu_close_clear_cancel"
+        android:visibility="visible"
+        android:clickable="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="close button"
+        android:layout_alignTop="@+id/searchView"
+        android:layout_alignEnd="@+id/gridview" />
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gridview"
+        android:layout_below="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="60dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="15dp"
+        android:horizontalSpacing="15dp"
+        android:layout_marginLeft="10dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        tools:listitem="@layout/alphabutton"        />
+</RelativeLayout>
